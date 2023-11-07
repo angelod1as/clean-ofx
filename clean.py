@@ -45,6 +45,11 @@ def process_line(line):
 
 
 def clean_ofx():
+  # "2" because sys.argv includes the script name
+  if len(sys.argv) < 2:
+    print('Not enough arguments')
+    return
+
   for arg in sys.argv:
     if arg in __file__:
       continue
