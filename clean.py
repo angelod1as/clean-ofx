@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# run `chmod +x clean.py` to allow running this script without writing `python3`
+
 import sys
 import re
 import os
