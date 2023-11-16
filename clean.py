@@ -5,8 +5,6 @@ import sys
 import re
 import os
 
-temp_file_path = 'temp.txt'
-
 regexes = [
   r'<MEMO>Transferência enviada pelo Pix - (.*?) - ',
   r'<MEMO>Transferência recebida pelo Pix - (.*?) - ',
