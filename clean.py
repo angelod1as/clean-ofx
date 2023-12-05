@@ -6,12 +6,20 @@ import re
 import os
 
 regexes = [
+  # Nubank
   r'<MEMO>Transferência enviada pelo Pix - (.*?) - ',
   r'<MEMO>Transferência recebida pelo Pix - (.*?) - ',
   r'<MEMO>Compra no débito - (.+?)<\/MEMO>',
   r'<MEMO>Pagamento de boleto efetuado - (.+?)<\/MEMO>',
   r'<MEMO>Transferência enviada - (.*?) - ',
   r'<MEMO>Transferência recebida - (.*?) - ',
+  # Bradesco
+  r'<MEMO>Transfe Pix Des: (.*?)(\\r\\n|\\n|$)',
+  r'<MEMO>Transfe Pix Rem: (.*?)(\\r\\n|\\n|$)',
+  r'<MEMO>Pix Qrcode Din Des: (.*?)(\\r\\n|\\n|$)',
+  r'<MEMO>Pix Qrcode Est Des: (.*?)(\\r\\n|\\n|$)',
+  r'<MEMO>Ted-t Elet Disp Remet.(.*?)(\\r\\n|\\n|$)',
+  r'<MEMO>Pagto Cobranca (.*?)(\\r\\n|\\n|$)',
   ]
 
 
